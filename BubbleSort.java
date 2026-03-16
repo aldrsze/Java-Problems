@@ -1,10 +1,10 @@
 import java.io.*;
 
-public class FrequencyCounter {
+public class BubbleSort {
     public static void main(String[] args) {
         Console con = System.console();
 
-        int count = 1;
+        int count = 0;
         int largest = 0;
         
         int[] array = new int[5];
@@ -37,17 +37,11 @@ public class FrequencyCounter {
         }
         System.out.println("----------------------\n");
         
-
-        System.out.println("\n- FREQUENCY COUNTER --");
-        for (int i = 1; i <= array.length; i++) {
-            if (i < array.length && array[i] == array[i - 1]) {
-                count++;
-            }else {
-                System.out.printf("Value: [%d] : [%d] times\n", array[i - 1], count);
-                count = 1;
-            }
+        System.out.println("---- SORTED ARRAY ----");
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf("Index[%d]: %3d\n", i, array[i]);
         }
-        System.out.println("----------------------\n");
+        System.out.println("----------------------");
 
     } // MAIN
 
