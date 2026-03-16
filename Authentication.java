@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.io.Console;
 
 
-public class Login {
+public class Authentication {
 	
 	private static ArrayList<User> userData= new ArrayList<>();
 	public static Console con = System.console();
